@@ -59,6 +59,7 @@ export default function Form() {
                 <div>
                     <label htmlFor="name">Name:</label>
                     <input
+                        required
                         placeholder="Fifa"
                         name="name"
                         id="name"
@@ -77,6 +78,7 @@ export default function Form() {
                 <div>
                     <label htmlFor="desc">Desc:</label>
                     <input
+                        required
                         placeholder="Pretty good"
                         name="desc"
                         id="desc"
@@ -95,6 +97,9 @@ export default function Form() {
                 <div>
                     <label htmlFor="review">Score:</label>
                     <input
+                        required
+                        min="0"
+                        max="10"
                         placeholder="Rating: 0-10"
                         name="review"
                         id="review"
@@ -113,6 +118,7 @@ export default function Form() {
                 <div>
                     <label htmlFor="image">Image link :</label>
                     <input
+                        required
                         placeholder="https://image.com/img1"
                         name="image"
                         id="image"
